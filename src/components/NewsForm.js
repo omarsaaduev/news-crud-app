@@ -48,7 +48,9 @@ const NewsForm = ({ addNews, editNews, editingNews, setEditingNews }) => {
       />
       <button type="submit">{editingNews ? "Update" : "Add"}</button>
       {editingNews && (
-        <button onClick={() => setEditingNews(null)}>Cancel</button>
+        <button className="cansel" onClick={() => setEditingNews(null)}>
+          Cancel
+        </button>
       )}
     </form>
   );

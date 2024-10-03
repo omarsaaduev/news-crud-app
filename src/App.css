@@ -201,3 +201,12 @@ button.cancel-btn:hover {
     margin-top: 10px;
   }
 }
+
+.cansel {
+  width: 100%;
+  background-color: red;
+  border-radius: 10px;
+  height: 38px;
+  border: none;
+  margin-top: 10px;
+}

@@ -17,7 +17,11 @@ const App = () => {
 
   // Сохранение данных в localStorage при каждом изменении списка новостей
   useEffect(() => {
-    if (news.length > 0) {
+    // Если массив новостей пуст, очищаем localStorage
+    if (news.length === 0) {
+      localStorage.removeItem("news");
+      console.log("Новости удалены из localStorage");
+    } else {
       localStorage.setItem("news", JSON.stringify(news));
       console.log("Новости сохранены в localStorage:", news);
     }

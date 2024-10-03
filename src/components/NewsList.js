@@ -18,7 +18,10 @@ const NewsList = ({ news, deleteNews, setEditingNews }) => {
               </div>
               <div className="news-item-footer">
                 <button onClick={() => setEditingNews(item)}>Edit</button>
-                <button className="delete-btn" onClick={() => deleteNews(item)}>
+                <button
+                  className="delete-btn"
+                  onClick={() => deleteNews(item.id)}
+                >
                   Delete
                 </button>
               </div>
